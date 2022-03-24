@@ -1,5 +1,5 @@
 import React from 'react';
-import {SideBar, TriangleCard, SquareCard, RectangleCard } from './components/views';
+import {SideBar, TriangleCard, SquareCard, RectangleCard, CircleCard, About } from './components/views';
 import './app.css';
 
 import { Route, Routes } from "react-router-dom";
@@ -16,11 +16,11 @@ const App = () => {
             <CCol md={10}>
                 <CContainer>
                     <Routes>
-                        <Route path="/" element={<p>Общая информация</p>} />
+                        <Route path="/" element={<About />} />
                         <Route path="/triangle" element={<TriangleCard />} />
                         <Route path="/square" element={<SquareCard />} />
                         <Route path="/rectangle" element={<RectangleCard />} />
-                        <Route path="/circle" element={<p>Круг</p>} />
+                        <Route path="/circle" element={<CircleCard />} />
                     </Routes>
                 </CContainer>
             </CCol>

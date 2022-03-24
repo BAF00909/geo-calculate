@@ -9,7 +9,7 @@ const SideBar = () => {
             <CSidebarBrand><img src="./logo.png" height="49px"/></CSidebarBrand>
             <CSidebarNav>
                 <CNavItem>
-                    <NavLink to="/">Общая информация</NavLink>
+                    <NavLink to="/">О проекте</NavLink>
                 </CNavItem>
                 <CNavItem>
                     <NavLink to="/triangle">Треугольник</NavLink>

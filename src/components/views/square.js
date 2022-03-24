@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-//import {sqSquare} from '../models/square';
+import {getSqSquare} from '../models/square';
 import { 
     CCard, CCardBody, 
     CCardHeader, 
@@ -24,7 +24,7 @@ const SquareCard = () => {
                     <CCol md={6}>
                         <h5>Нахождение площади квадрата через его сторону (обобщенная формула):</h5>
                         <img src="./square.png" />
-                        <h6><b>S = a^2</b></h6>
+                        <h6><b>S = a * a</b></h6>
                         <p><b>Где: </b></p>
                         <p><b>S - площадь квадрата</b></p>
                         <p><b>a - сторона квадрата</b></p>
@@ -35,7 +35,7 @@ const SquareCard = () => {
                                 <CFormLabel htmlFor="side"><b>Сторона квадрата:</b></CFormLabel>
                                 <CFormInput id="side" onChange={handleChange}/>
                                 <CFormLabel htmlFor="result"><b>Площадь квадрата:</b></CFormLabel>
-                                <CFormInput id="result" disabled={true} value={0}/>
+                                <CFormInput id="result" disabled={true} value={getSqSquare(side)}/>
                             </CForm>
                         </CCard>
                     </CCol>

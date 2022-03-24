@@ -1,0 +1,15 @@
+.nav-item a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+.nav-item a:hover {
+    color:#fff;
+}
+.nav-item:hover {
+    background: #2c384af3;
+}

@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app';
-import { Container } from '@mui/material';
-
-
-
+import { BrowserRouter as Router, HashRouter} from "react-router-dom";
 
 ReactDOM.render(
 <React.StrictMode>
-  <App />
+	<HashRouter>
+    	<App />
+	</HashRouter>
 </React.StrictMode>,
   document.getElementById('root')
 );

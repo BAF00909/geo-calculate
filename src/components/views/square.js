@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-//import {sqSquare} from '../models/square';
+import {getSqSquare} from '../models/square';
 import { 
     CCard, CCardBody, 
     CCardHeader, 
@@ -35,7 +35,7 @@ const SquareCard = () => {
                                 <CFormLabel htmlFor="side"><b>Сторона квадрата:</b></CFormLabel>
                                 <CFormInput id="side" onChange={handleChange}/>
                                 <CFormLabel htmlFor="result"><b>Площадь квадрата:</b></CFormLabel>
-                                <CFormInput id="result" disabled={true} value={0}/>
+                                <CFormInput id="result" disabled={true} value={getSqSquare(side)}/>
                             </CForm>
                         </CCard>
                     </CCol>

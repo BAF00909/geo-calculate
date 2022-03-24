@@ -13,3 +13,6 @@
 .nav-item:hover {
     background: #2c384af3;
 }
+.form-control {
+    width: 50% !important;
+}

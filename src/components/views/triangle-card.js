@@ -23,15 +23,23 @@ const TriangleCard = () => {
             <CCardHeader><h3>Треугольник</h3></CCardHeader>
             <CCardBody>
                 <CRow>
-                    <CCol md={6}><p>Нахождение площади треугольника по его высоте и основанию (обобщенная формула)</p></CCol>
                     <CCol md={6}>
-                        <CCard>
+                        <h5>Нахождение площади треугольника по его высоте и основанию (обобщенная формула):</h5>
+                        <img src="./triangle.png" />
+                        <h6><b>S = 1/2 * (a * h)</b></h6>
+                        <p><b>Где: </b></p>
+                        <p><b>S - площадь треугольника</b></p>
+                        <p><b>a - сторона треугольника</b></p>
+                        <p><b>h - высота треугольника</b></p>
+                    </CCol>
+                    <CCol md={6}>
+                        <CCard style={{padding:'15px'}}>
                             <CForm>
-                                <CFormLabel htmlFor="side">Сторона:</CFormLabel>
+                                <CFormLabel htmlFor="side"><b>Сторона треугольника:</b></CFormLabel>
                                 <CFormInput id="side" onChange={handleChange}/>
-                                <CFormLabel htmlFor="height">Высота:</CFormLabel>
+                                <CFormLabel htmlFor="height"><b>Высота треугольника:</b></CFormLabel>
                                 <CFormInput id="height" onChange={handleChange}/>
-                                <CFormLabel htmlFor="result">Резудьтат:</CFormLabel>
+                                <CFormLabel htmlFor="result"><b>Площадь треугольника:</b></CFormLabel>
                                 <CFormInput id="result" disabled={true} value={sqTriangle(side,height)}/>
                             </CForm>
                         </CCard>
